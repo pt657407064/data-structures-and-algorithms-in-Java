@@ -28,11 +28,11 @@ public class BubbleSort {
             System.out.print(num+" ");
         }
         System.out.println();
-        for(int i=0;i<9;i++)
+        for(int i=0;i<nums.length-1;i++)
         {
             //Flag to test best case for time complexity 
             boolean  swap = false;
-            for(int j = 1;j<10;j++){
+            for(int j = 1;j<nums.length;j++){
                 if(nums[j]<nums[j-1])
                 {
                     int temp = nums[j];
