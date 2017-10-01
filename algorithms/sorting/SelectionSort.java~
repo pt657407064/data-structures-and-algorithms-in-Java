@@ -7,10 +7,15 @@ package selectionsort;
 
 import java.util.Random;
 
-/**
- *
- * @author taopa
- */
+//Author Tao
+//Concept:
+/*for example
+original	5 4 3 2 1
+1st sort	1 5 4 3 2 
+2nd sort	1 2 5 4 3
+3rd sort	1 2 3 5 4
+4th sort	1 2 3 4 5
+*/
 public class SelectionSort {
 
     /**
@@ -37,7 +42,7 @@ public class SelectionSort {
     }
     
     public static void selectionSort(int [] arrs){       
-        for(int i = 0;i < arrs.length-1;i++){
+        for(int i = 0;i < arrs.length-1;i++){ 
             for(int j = i+1;j<arrs.length;j++){
                 if(arrs[j]<arrs[i]){
                     int temp = arrs[i];

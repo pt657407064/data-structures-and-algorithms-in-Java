@@ -8,9 +8,16 @@ package insertionsort;
 import java.util.Random;
 
 /**
- *
- * @author taopa
- */
+ * 	example are based on worst case
+ * 	time complexity O(n^2)
+ Concept of the Insertion Sort
+ Original 5 4 3 2 1
+ 1st	  4 5 3 2 1	 
+ 2nd	  3 4 5 2 1
+ 3rd	  2 3 4 5 1
+ 4th	  1 2 3 4 5
+
+*/
 public class InsertionSort {
 
     /**
