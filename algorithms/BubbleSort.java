@@ -31,19 +31,18 @@ public class BubbleSort {
         for(int i=0;i<nums.length-1;i++)
         {
             //Flag to test best case for time complexity 
-            boolean  swap = false;
+            boolean  swapped = false;
             for(int j = 1;j<nums.length;j++){
                 if(nums[j]<nums[j-1])
                 {
                     int temp = nums[j];
                     nums[j] = nums[j-1];
                     nums[j-1]=temp;
-                    swap=true;
-                }
-                if(!swap){
-                    break;
+                    swapped=true;
                 }
             }
+                if(!swapped)
+                    break;
         }
         System.out.print("Sorted: ");
         for(int num: nums){
