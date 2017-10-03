@@ -21,7 +21,7 @@ public class Queue<E> {
         this.size = size;
         queue = new Object[size];
     }
-    public void insert(E element){
+    public void enqueue(E element){
         if(numberOfItem +1 <= size){
             queue[rear] = element;
             if(rear == size -1) //So it will not have stackoverflow
@@ -35,7 +35,7 @@ public class Queue<E> {
     public E peek(){
         return (E)queue[front];
     }
-    public void remove(){
+    public void dequeue(){
         System.out.println("Element Remove");
         if(numberOfItem > 0){
         queue[front] = null;
@@ -48,26 +48,26 @@ public class Queue<E> {
     public static void main(String[] args) {
       Queue<String> queue = new Queue<>(10);
       while(true){
-          queue.insert("Apple");
-          queue.insert("Facebook");
-          queue.insert("Google");
-          queue.insert("Amazon");
-          queue.insert("Oracle");
-          queue.remove();
-          queue.remove();
-          queue.remove();
-          queue.remove();
-          queue.remove();
+          queue.enqueue("Apple");
+          queue.enqueue("Facebook");
+          queue.enqueue("Google");
+          queue.enqueue("Amazon");
+          queue.enqueue("Oracle");
+          queue.dequeue();
+          queue.dequeue();
+          queue.dequeue();
+          queue.dequeue();
+          queue.dequeue();
           
-          queue.insert("Microsoft");
-          queue.insert("AirBandB");
-          queue.insert("Linkedin");
-          queue.insert("Uber");
-          queue.insert("Dell");
-          queue.remove();
-          queue.remove();
-          queue.remove();
-          queue.remove();
+          queue.enqueue("Microsoft");
+          queue.enqueue("AirBandB");
+          queue.enqueue("Linkedin");
+          queue.enqueue("Uber");
+          queue.enqueue("Dell");
+          queue.dequeue();
+          queue.dequeue();
+          queue.dequeue();
+          queue.dequeue();
           
       }
       
