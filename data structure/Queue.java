@@ -24,7 +24,7 @@ public class Queue<E> {
     public void insert(E element){
         if(numberOfItem +1 <= size){
             queue[rear] = element;
-            if(rear == size -1)
+            if(rear == size -1) //So it will not have stackoverflow
                 rear = 0;
             rear++;           
             numberOfItem++;
@@ -39,11 +39,10 @@ public class Queue<E> {
         System.out.println("Element Remove");
         if(numberOfItem > 0){
         queue[front] = null;
-        if(front == size-1)
+        if(front == size-1) //So it will not have stackoverflow
             front = 0;
         front ++;
         numberOfItem --;
-        Object[] tempQ = new Object[size];
         }
     }
     public static void main(String[] args) {
