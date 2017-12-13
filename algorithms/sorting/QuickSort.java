@@ -31,10 +31,6 @@ public class QuickSort {
         
         System.out.println();
         
-        
-            
-        
-        
     }
     public static void quickSort(int[] array, int low, int high){
         if (low < high){
