@@ -1,5 +1,5 @@
 # data-structures-and-algorithms-in-Java
-Implementation data structure in java
+Implementating data structure in java
 
 This repo is my personal project for data structure and algoritms implementation in Java
 
