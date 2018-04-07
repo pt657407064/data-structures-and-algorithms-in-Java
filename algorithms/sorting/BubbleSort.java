@@ -49,8 +49,7 @@ public class BubbleSort {
                     swapped=true;
                 }
             }
-                if(!swapped)
-                    break;
+            if(!swapped) break;
         }
         System.out.print("Sorted: ");
         for(int num: nums){
